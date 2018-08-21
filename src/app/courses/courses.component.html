@@ -1,0 +1,87 @@
+
+
+  <ul *ngFor="let c of course">
+  <li class="alert alert-info" >
+      {{c.courseName}}
+  </li>
+  </ul>
+
+<hr>
+
+
+
+<div class="form-group">
+<form [formGroup]="addCourseForm">
+
+  <h3 div class="well">Add Course</h3>
+  <table name="form" align="center">
+    <tr>
+      <td>
+        <label>Course Name</label>
+      </td>
+        
+      <td>
+        <input class="form-control" type="text" formControlName="cname" required />
+      </td>
+      <td>
+          <div *ngIf="addCourseForm.controls['cname'].touched && !addCourseForm.controls['cname'].valid">
+            <span *ngIf="addCourseForm.controls['cname'].hasError('required')">
+              Course Name is Required!!!
+            </span>
+            <span *ngIf="addCourseForm.controls['cname'].hasError('pattern')">
+              Course Name should only be alphanumeric!!!
+            </span>
+            
+          </div>
+        </td>
+
+    </tr>
+    <br/>
+    <tr>
+      <td>
+        <label> Duration </label>
+      </td>
+      <td>
+        <input class="form-control" type="text" formControlName="cdur" required />
+      </td>
+       <td>
+          <div *ngIf="addCourseForm.controls['cdur'].touched && !addCourseForm.controls['cdur'].valid">
+            <span *ngIf="addCourseForm.controls['cdur'].hasError('required')">
+              Course Duration is Required!!!
+            </span>
+            <span *ngIf="addCourseForm.controls['cdur'].hasError('pattern')">
+              Course Duration should only be numeric digits!!!
+            </span>
+            
+          </div>
+        </td>
+    </tr>
+    <br/>
+    <tr>
+      <td colspan="2">
+    <button type="submit" class="btn btn-info" id="add" (click)='addCourse()'>ADD Course</button>
+      </td>
+      
+    </tr>
+    <br/>
+  </table>
+  <br/>
+  <hr>
+</form>
+</div>
+
+
+
+
+
+<br/>
+<h3 div class="well">Search Duration</h3>
+<label>
+Enter Course Name
+</label>
+<input class="form-control" type="text" [(ngModel)]='searchstr'/>
+<br/>
+<button  class="btn btn-info" id="duration" (click)='getDur()'>Get Duration</button>
+<p id="showDur">
+ 
+</p>

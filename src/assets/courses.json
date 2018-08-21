@@ -1,0 +1,31 @@
+[
+    {
+        "courseId":1,
+        "courseName":"JAVA",
+        "coursePrice":30000
+    },
+    
+    {
+        "courseId":2,
+        "courseName":"Javascript",
+        "coursePrice":20000
+    },
+    
+    {
+        "courseId":3,
+        "courseName":"PHP",
+        "coursePrice":18000
+    },
+    
+    {
+        "courseId":4,
+        "courseName":"Python",
+        "coursePrice":15000
+    },
+    
+    {
+        "courseId":5,
+        "courseName":"Android",
+        "coursePrice":22000
+    }
+]

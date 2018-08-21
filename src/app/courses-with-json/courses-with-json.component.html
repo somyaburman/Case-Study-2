@@ -1,0 +1,11 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<h3>Courses with JSON</h3>
+<br/>
+<ul class="list-group" *ngFor="let c of arrCourse">
+       <li class="list-group-item list-group-item-info">
+         {{c.courseName | lowercase}}
+         {{c.coursePrice | currency:'INR'}}
+       </li> 
+     </ul>

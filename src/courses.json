@@ -1,0 +1,34 @@
+[
+    {
+        "courseName": "Java",
+        "courseDur": "4 months"
+    },
+    {
+        "courseName": "Javascript",
+        "courseDur": "3 months"
+    },
+     {
+        "courseName": "C",
+        "courseDur": "2 months"
+    },
+    {
+        "courseName": "C++",
+        "courseDur": "2 months"
+    },
+     {
+        "courseName": "Python",
+        "courseDur": "3 months"
+    },
+    {
+        "courseName": "SAP",
+        "courseDur": "4 months"
+    },
+     {
+        "courseName": "Android",
+        "courseDur": "3 months"
+    },
+    {
+        "courseName": "CAD",
+        "courseDur": "4 months"
+    }
+]
